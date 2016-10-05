@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		862054241DA5270C00B597ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 862054231DA5270C00B597ED /* main.m */; };
+		862054271DA5270C00B597ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 862054261DA5270C00B597ED /* AppDelegate.m */; };
+		8620542A1DA5270C00B597ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862054291DA5270C00B597ED /* ViewController.m */; };
+		8620542D1DA5270C00B597ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8620542B1DA5270C00B597ED /* Main.storyboard */; };
+		8620542F1DA5270C00B597ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8620542E1DA5270C00B597ED /* Assets.xcassets */; };
+		862054321DA5270C00B597ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 862054301DA5270C00B597ED /* LaunchScreen.storyboard */; };
+		8620543D1DA5270C00B597ED /* ProjectSpinnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8620543C1DA5270C00B597ED /* ProjectSpinnerTests.m */; };
+		862054481DA5270C00B597ED /* ProjectSpinnerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 862054471DA5270C00B597ED /* ProjectSpinnerUITests.m */; };
+		8620544D1DA5270C00B597ED /* ProjectSpinner WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8620544C1DA5270C00B597ED /* ProjectSpinner WatchKit App.app */; };
+		862054531DA5270C00B597ED /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 862054511DA5270C00B597ED /* Interface.storyboard */; };
+		862054551DA5270C00B597ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 862054541DA5270C00B597ED /* Assets.xcassets */; };
+		8620545C1DA5270C00B597ED /* ProjectSpinner WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8620545B1DA5270C00B597ED /* ProjectSpinner WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		862054641DA5270C00B597ED /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862054631DA5270C00B597ED /* InterfaceController.m */; };
+		862054671DA5270C00B597ED /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 862054661DA5270C00B597ED /* ExtensionDelegate.m */; };
+		8620546A1DA5270C00B597ED /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862054691DA5270C00B597ED /* NotificationController.m */; };
+		8620546C1DA5270C00B597ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8620546B1DA5270C00B597ED /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		862054391DA5270C00B597ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 862054171DA5270C00B597ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8620541E1DA5270C00B597ED;
+			remoteInfo = ProjectSpinner;
+		};
+		862054441DA5270C00B597ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 862054171DA5270C00B597ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8620541E1DA5270C00B597ED;
+			remoteInfo = ProjectSpinner;
+		};
+		8620544E1DA5270C00B597ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 862054171DA5270C00B597ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8620544B1DA5270C00B597ED;
+			remoteInfo = "ProjectSpinner WatchKit App";
+		};
+		8620545D1DA5270C00B597ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 862054171DA5270C00B597ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8620545A1DA5270C00B597ED;
+			remoteInfo = "ProjectSpinner WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		862054731DA5270C00B597ED /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8620545C1DA5270C00B597ED /* ProjectSpinner WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862054771DA5270C00B597ED /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8620544D1DA5270C00B597ED /* ProjectSpinner WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8620541F1DA5270C00B597ED /* ProjectSpinner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectSpinner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		862054231DA5270C00B597ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		862054251DA5270C00B597ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		862054261DA5270C00B597ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		862054281DA5270C00B597ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		862054291DA5270C00B597ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8620542C1DA5270C00B597ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8620542E1DA5270C00B597ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		862054311DA5270C00B597ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		862054331DA5270C00B597ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		862054381DA5270C00B597ED /* ProjectSpinnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectSpinnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8620543C1DA5270C00B597ED /* ProjectSpinnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectSpinnerTests.m; sourceTree = "<group>"; };
+		8620543E1DA5270C00B597ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		862054431DA5270C00B597ED /* ProjectSpinnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectSpinnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		862054471DA5270C00B597ED /* ProjectSpinnerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectSpinnerUITests.m; sourceTree = "<group>"; };
+		862054491DA5270C00B597ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8620544C1DA5270C00B597ED /* ProjectSpinner WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectSpinner WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		862054521DA5270C00B597ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		862054541DA5270C00B597ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		862054561DA5270C00B597ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8620545B1DA5270C00B597ED /* ProjectSpinner WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ProjectSpinner WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		862054611DA5270C00B597ED /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		862054621DA5270C00B597ED /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		862054631DA5270C00B597ED /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		862054651DA5270C00B597ED /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		862054661DA5270C00B597ED /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		862054681DA5270C00B597ED /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		862054691DA5270C00B597ED /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		8620546B1DA5270C00B597ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8620546D1DA5270C00B597ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8620541C1DA5270C00B597ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862054351DA5270C00B597ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862054401DA5270C00B597ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862054581DA5270C00B597ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		862054161DA5270C00B597ED = {
+			isa = PBXGroup;
+			children = (
+				862054211DA5270C00B597ED /* ProjectSpinner */,
+				8620543B1DA5270C00B597ED /* ProjectSpinnerTests */,
+				862054461DA5270C00B597ED /* ProjectSpinnerUITests */,
+				862054501DA5270C00B597ED /* ProjectSpinner WatchKit App */,
+				8620545F1DA5270C00B597ED /* ProjectSpinner WatchKit Extension */,
+				862054201DA5270C00B597ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		862054201DA5270C00B597ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8620541F1DA5270C00B597ED /* ProjectSpinner.app */,
+				862054381DA5270C00B597ED /* ProjectSpinnerTests.xctest */,
+				862054431DA5270C00B597ED /* ProjectSpinnerUITests.xctest */,
+				8620544C1DA5270C00B597ED /* ProjectSpinner WatchKit App.app */,
+				8620545B1DA5270C00B597ED /* ProjectSpinner WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		862054211DA5270C00B597ED /* ProjectSpinner */ = {
+			isa = PBXGroup;
+			children = (
+				862054251DA5270C00B597ED /* AppDelegate.h */,
+				862054261DA5270C00B597ED /* AppDelegate.m */,
+				862054281DA5270C00B597ED /* ViewController.h */,
+				862054291DA5270C00B597ED /* ViewController.m */,
+				8620542B1DA5270C00B597ED /* Main.storyboard */,
+				8620542E1DA5270C00B597ED /* Assets.xcassets */,
+				862054301DA5270C00B597ED /* LaunchScreen.storyboard */,
+				862054331DA5270C00B597ED /* Info.plist */,
+				862054221DA5270C00B597ED /* Supporting Files */,
+			);
+			path = ProjectSpinner;
+			sourceTree = "<group>";
+		};
+		862054221DA5270C00B597ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				862054231DA5270C00B597ED /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8620543B1DA5270C00B597ED /* ProjectSpinnerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8620543C1DA5270C00B597ED /* ProjectSpinnerTests.m */,
+				8620543E1DA5270C00B597ED /* Info.plist */,
+			);
+			path = ProjectSpinnerTests;
+			sourceTree = "<group>";
+		};
+		862054461DA5270C00B597ED /* ProjectSpinnerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				862054471DA5270C00B597ED /* ProjectSpinnerUITests.m */,
+				862054491DA5270C00B597ED /* Info.plist */,
+			);
+			path = ProjectSpinnerUITests;
+			sourceTree = "<group>";
+		};
+		862054501DA5270C00B597ED /* ProjectSpinner WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				862054511DA5270C00B597ED /* Interface.storyboard */,
+				862054541DA5270C00B597ED /* Assets.xcassets */,
+				862054561DA5270C00B597ED /* Info.plist */,
+			);
+			path = "ProjectSpinner WatchKit App";
+			sourceTree = "<group>";
+		};
+		8620545F1DA5270C00B597ED /* ProjectSpinner WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				862054621DA5270C00B597ED /* InterfaceController.h */,
+				862054631DA5270C00B597ED /* InterfaceController.m */,
+				862054651DA5270C00B597ED /* ExtensionDelegate.h */,
+				862054661DA5270C00B597ED /* ExtensionDelegate.m */,
+				862054681DA5270C00B597ED /* NotificationController.h */,
+				862054691DA5270C00B597ED /* NotificationController.m */,
+				8620546B1DA5270C00B597ED /* Assets.xcassets */,
+				8620546D1DA5270C00B597ED /* Info.plist */,
+				862054601DA5270C00B597ED /* Supporting Files */,
+			);
+			path = "ProjectSpinner WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		862054601DA5270C00B597ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				862054611DA5270C00B597ED /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8620541E1DA5270C00B597ED /* ProjectSpinner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 862054781DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinner" */;
+			buildPhases = (
+				8620541B1DA5270C00B597ED /* Sources */,
+				8620541C1DA5270C00B597ED /* Frameworks */,
+				8620541D1DA5270C00B597ED /* Resources */,
+				862054771DA5270C00B597ED /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8620544F1DA5270C00B597ED /* PBXTargetDependency */,
+			);
+			name = ProjectSpinner;
+			productName = ProjectSpinner;
+			productReference = 8620541F1DA5270C00B597ED /* ProjectSpinner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		862054371DA5270C00B597ED /* ProjectSpinnerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8620547B1DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinnerTests" */;
+			buildPhases = (
+				862054341DA5270C00B597ED /* Sources */,
+				862054351DA5270C00B597ED /* Frameworks */,
+				862054361DA5270C00B597ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8620543A1DA5270C00B597ED /* PBXTargetDependency */,
+			);
+			name = ProjectSpinnerTests;
+			productName = ProjectSpinnerTests;
+			productReference = 862054381DA5270C00B597ED /* ProjectSpinnerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		862054421DA5270C00B597ED /* ProjectSpinnerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8620547E1DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinnerUITests" */;
+			buildPhases = (
+				8620543F1DA5270C00B597ED /* Sources */,
+				862054401DA5270C00B597ED /* Frameworks */,
+				862054411DA5270C00B597ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				862054451DA5270C00B597ED /* PBXTargetDependency */,
+			);
+			name = ProjectSpinnerUITests;
+			productName = ProjectSpinnerUITests;
+			productReference = 862054431DA5270C00B597ED /* ProjectSpinnerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		8620544B1DA5270C00B597ED /* ProjectSpinner WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 862054741DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinner WatchKit App" */;
+			buildPhases = (
+				8620544A1DA5270C00B597ED /* Resources */,
+				862054731DA5270C00B597ED /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8620545E1DA5270C00B597ED /* PBXTargetDependency */,
+			);
+			name = "ProjectSpinner WatchKit App";
+			productName = "ProjectSpinner WatchKit App";
+			productReference = 8620544C1DA5270C00B597ED /* ProjectSpinner WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8620545A1DA5270C00B597ED /* ProjectSpinner WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 862054701DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinner WatchKit Extension" */;
+			buildPhases = (
+				862054571DA5270C00B597ED /* Sources */,
+				862054581DA5270C00B597ED /* Frameworks */,
+				862054591DA5270C00B597ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ProjectSpinner WatchKit Extension";
+			productName = "ProjectSpinner WatchKit Extension";
+			productReference = 8620545B1DA5270C00B597ED /* ProjectSpinner WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		862054171DA5270C00B597ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Rohan Hawthorne";
+				TargetAttributes = {
+					8620541E1DA5270C00B597ED = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = K6ZGCJU877;
+						ProvisioningStyle = Automatic;
+					};
+					862054371DA5270C00B597ED = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = K6ZGCJU877;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8620541E1DA5270C00B597ED;
+					};
+					862054421DA5270C00B597ED = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = K6ZGCJU877;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8620541E1DA5270C00B597ED;
+					};
+					8620544B1DA5270C00B597ED = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = K6ZGCJU877;
+						ProvisioningStyle = Automatic;
+					};
+					8620545A1DA5270C00B597ED = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = K6ZGCJU877;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8620541A1DA5270C00B597ED /* Build configuration list for PBXProject "ProjectSpinner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 862054161DA5270C00B597ED;
+			productRefGroup = 862054201DA5270C00B597ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8620541E1DA5270C00B597ED /* ProjectSpinner */,
+				862054371DA5270C00B597ED /* ProjectSpinnerTests */,
+				862054421DA5270C00B597ED /* ProjectSpinnerUITests */,
+				8620544B1DA5270C00B597ED /* ProjectSpinner WatchKit App */,
+				8620545A1DA5270C00B597ED /* ProjectSpinner WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8620541D1DA5270C00B597ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862054321DA5270C00B597ED /* LaunchScreen.storyboard in Resources */,
+				8620542F1DA5270C00B597ED /* Assets.xcassets in Resources */,
+				8620542D1DA5270C00B597ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862054361DA5270C00B597ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862054411DA5270C00B597ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8620544A1DA5270C00B597ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862054551DA5270C00B597ED /* Assets.xcassets in Resources */,
+				862054531DA5270C00B597ED /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862054591DA5270C00B597ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8620546C1DA5270C00B597ED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8620541B1DA5270C00B597ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8620542A1DA5270C00B597ED /* ViewController.m in Sources */,
+				862054271DA5270C00B597ED /* AppDelegate.m in Sources */,
+				862054241DA5270C00B597ED /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862054341DA5270C00B597ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8620543D1DA5270C00B597ED /* ProjectSpinnerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8620543F1DA5270C00B597ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862054481DA5270C00B597ED /* ProjectSpinnerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862054571DA5270C00B597ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862054671DA5270C00B597ED /* ExtensionDelegate.m in Sources */,
+				862054641DA5270C00B597ED /* InterfaceController.m in Sources */,
+				8620546A1DA5270C00B597ED /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8620543A1DA5270C00B597ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8620541E1DA5270C00B597ED /* ProjectSpinner */;
+			targetProxy = 862054391DA5270C00B597ED /* PBXContainerItemProxy */;
+		};
+		862054451DA5270C00B597ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8620541E1DA5270C00B597ED /* ProjectSpinner */;
+			targetProxy = 862054441DA5270C00B597ED /* PBXContainerItemProxy */;
+		};
+		8620544F1DA5270C00B597ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8620544B1DA5270C00B597ED /* ProjectSpinner WatchKit App */;
+			targetProxy = 8620544E1DA5270C00B597ED /* PBXContainerItemProxy */;
+		};
+		8620545E1DA5270C00B597ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8620545A1DA5270C00B597ED /* ProjectSpinner WatchKit Extension */;
+			targetProxy = 8620545D1DA5270C00B597ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8620542B1DA5270C00B597ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8620542C1DA5270C00B597ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		862054301DA5270C00B597ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				862054311DA5270C00B597ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		862054511DA5270C00B597ED /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				862054521DA5270C00B597ED /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8620546E1DA5270C00B597ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8620546F1DA5270C00B597ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		862054711DA5270C00B597ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = K6ZGCJU877;
+				INFOPLIST_FILE = "ProjectSpinner WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TallyHo.ProjectSpinner.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		862054721DA5270C00B597ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = K6ZGCJU877;
+				INFOPLIST_FILE = "ProjectSpinner WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TallyHo.ProjectSpinner.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		862054751DA5270C00B597ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K6ZGCJU877;
+				IBSC_MODULE = ProjectSpinner_WatchKit_Extension;
+				INFOPLIST_FILE = "ProjectSpinner WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = TallyHo.ProjectSpinner.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		862054761DA5270C00B597ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K6ZGCJU877;
+				IBSC_MODULE = ProjectSpinner_WatchKit_Extension;
+				INFOPLIST_FILE = "ProjectSpinner WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = TallyHo.ProjectSpinner.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		862054791DA5270C00B597ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K6ZGCJU877;
+				INFOPLIST_FILE = ProjectSpinner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TallyHo.ProjectSpinner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8620547A1DA5270C00B597ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K6ZGCJU877;
+				INFOPLIST_FILE = ProjectSpinner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TallyHo.ProjectSpinner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8620547C1DA5270C00B597ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K6ZGCJU877;
+				INFOPLIST_FILE = ProjectSpinnerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TallyHo.ProjectSpinnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectSpinner.app/ProjectSpinner";
+			};
+			name = Debug;
+		};
+		8620547D1DA5270C00B597ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K6ZGCJU877;
+				INFOPLIST_FILE = ProjectSpinnerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TallyHo.ProjectSpinnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectSpinner.app/ProjectSpinner";
+			};
+			name = Release;
+		};
+		8620547F1DA5270C00B597ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = K6ZGCJU877;
+				INFOPLIST_FILE = ProjectSpinnerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TallyHo.ProjectSpinnerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ProjectSpinner;
+			};
+			name = Debug;
+		};
+		862054801DA5270C00B597ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = K6ZGCJU877;
+				INFOPLIST_FILE = ProjectSpinnerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TallyHo.ProjectSpinnerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ProjectSpinner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8620541A1DA5270C00B597ED /* Build configuration list for PBXProject "ProjectSpinner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8620546E1DA5270C00B597ED /* Debug */,
+				8620546F1DA5270C00B597ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		862054701DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinner WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862054711DA5270C00B597ED /* Debug */,
+				862054721DA5270C00B597ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		862054741DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinner WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862054751DA5270C00B597ED /* Debug */,
+				862054761DA5270C00B597ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		862054781DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862054791DA5270C00B597ED /* Debug */,
+				8620547A1DA5270C00B597ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8620547B1DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinnerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8620547C1DA5270C00B597ED /* Debug */,
+				8620547D1DA5270C00B597ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8620547E1DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinnerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8620547F1DA5270C00B597ED /* Debug */,
+				862054801DA5270C00B597ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 862054171DA5270C00B597ED /* Project object */;
+}
