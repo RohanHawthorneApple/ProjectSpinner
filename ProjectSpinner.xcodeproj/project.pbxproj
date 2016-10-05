@@ -23,6 +23,9 @@
 		862054671DA5270C00B597ED /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 862054661DA5270C00B597ED /* ExtensionDelegate.m */; };
 		8620546A1DA5270C00B597ED /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862054691DA5270C00B597ED /* NotificationController.m */; };
 		8620546C1DA5270C00B597ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8620546B1DA5270C00B597ED /* Assets.xcassets */; };
+		862054831DA534EA00B597ED /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862054821DA534EA00B597ED /* SpriteKit.framework */; };
+		862054961DA5391000B597ED /* SpinnerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 862054951DA5391000B597ED /* SpinnerScene.m */; };
+		8620549C1DA546E700B597ED /* Choices.m in Sources */ = {isa = PBXBuildFile; fileRef = 8620549B1DA546E700B597ED /* Choices.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +115,11 @@
 		862054691DA5270C00B597ED /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		8620546B1DA5270C00B597ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8620546D1DA5270C00B597ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		862054821DA534EA00B597ED /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		862054941DA5391000B597ED /* SpinnerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinnerScene.h; sourceTree = "<group>"; };
+		862054951DA5391000B597ED /* SpinnerScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinnerScene.m; sourceTree = "<group>"; };
+		8620549A1DA546E700B597ED /* Choices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Choices.h; sourceTree = "<group>"; };
+		8620549B1DA546E700B597ED /* Choices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Choices.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				862054831DA534EA00B597ED /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +164,7 @@
 				862054501DA5270C00B597ED /* ProjectSpinner WatchKit App */,
 				8620545F1DA5270C00B597ED /* ProjectSpinner WatchKit Extension */,
 				862054201DA5270C00B597ED /* Products */,
+				862054811DA534EA00B597ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,11 +183,15 @@
 		862054211DA5270C00B597ED /* ProjectSpinner */ = {
 			isa = PBXGroup;
 			children = (
+				862054941DA5391000B597ED /* SpinnerScene.h */,
+				862054951DA5391000B597ED /* SpinnerScene.m */,
 				862054251DA5270C00B597ED /* AppDelegate.h */,
 				862054261DA5270C00B597ED /* AppDelegate.m */,
 				862054281DA5270C00B597ED /* ViewController.h */,
 				862054291DA5270C00B597ED /* ViewController.m */,
 				8620542B1DA5270C00B597ED /* Main.storyboard */,
+				8620549A1DA546E700B597ED /* Choices.h */,
+				8620549B1DA546E700B597ED /* Choices.m */,
 				8620542E1DA5270C00B597ED /* Assets.xcassets */,
 				862054301DA5270C00B597ED /* LaunchScreen.storyboard */,
 				862054331DA5270C00B597ED /* Info.plist */,
@@ -244,6 +258,14 @@
 				862054611DA5270C00B597ED /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		862054811DA534EA00B597ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				862054821DA534EA00B597ED /* SpriteKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,7 +471,9 @@
 			files = (
 				8620542A1DA5270C00B597ED /* ViewController.m in Sources */,
 				862054271DA5270C00B597ED /* AppDelegate.m in Sources */,
+				862054961DA5391000B597ED /* SpinnerScene.m in Sources */,
 				862054241DA5270C00B597ED /* main.m in Sources */,
+				8620549C1DA546E700B597ED /* Choices.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +801,7 @@
 				862054721DA5270C00B597ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		862054741DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinner WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -785,6 +810,7 @@
 				862054761DA5270C00B597ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		862054781DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinner" */ = {
 			isa = XCConfigurationList;
@@ -793,6 +819,7 @@
 				8620547A1DA5270C00B597ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8620547B1DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinnerTests" */ = {
 			isa = XCConfigurationList;
@@ -801,6 +828,7 @@
 				8620547D1DA5270C00B597ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8620547E1DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinnerUITests" */ = {
 			isa = XCConfigurationList;
@@ -809,6 +837,7 @@
 				862054801DA5270C00B597ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

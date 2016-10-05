@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)Spin:(id)sender;
+- (IBAction)ConfigureChoices:(id)sender;
 
 @end
 

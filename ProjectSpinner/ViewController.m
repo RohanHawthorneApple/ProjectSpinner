@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import <SpriteKit/SpriteKit.h>
+#import "SpinnerScene.h"
+#import "Choices.h"
 
 @interface ViewController ()
 
@@ -18,8 +21,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    // add me to git
+    // add Sprite Stuff
+    SKView *spriteView = (SKView *) self.view;
+    spriteView.showsDrawCount = YES;
+    spriteView.showsNodeCount = YES;
+    spriteView.showsFPS = YES;
     
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    SpinnerScene* spinner = [[SpinnerScene alloc] initWithSize:CGSizeMake(768,1024)];
+    SKView *spriteView = (SKView *) self.view;
+    [spriteView presentScene: spinner];
 }
 
 
@@ -29,4 +43,15 @@
 }
 
 
+- (IBAction)Spin:(id)sender {
+}
+
+- (IBAction)ConfigureChoices:(id)sender {
+    Choices *choicesVC = [[Choices alloc] init];
+    
+    // fill vc with choices
+    
+    // segue
+    [self presentViewController:choicesVC animated:YES completion:nil];
+}
 @end
