@@ -14,12 +14,12 @@
 
 @implementation ViewController
 
+@synthesize lblDialogue;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    // add me to git
-    
+    [lblDialogue setText:@"Tap to spin, long press to change values"];
 }
 
 
@@ -29,4 +29,12 @@
 }
 
 
+- (IBAction)showDetailsSegue:(id)sender {
+    [lblDialogue setText:@"Going to options..."];
+    [self performSegueWithIdentifier:@"showOptions" sender:self];
+}
+
+- (IBAction)startSpinner:(id)sender {
+    [lblDialogue setText:@"Come in spinner!"];
+}
 @end

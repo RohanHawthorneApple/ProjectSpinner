@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)showDetailsSegue:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UILabel *lblDialogue;
+
+- (IBAction)startSpinner:(id)sender;
 
 @end
 

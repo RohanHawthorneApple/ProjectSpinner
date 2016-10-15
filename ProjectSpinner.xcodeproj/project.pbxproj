@@ -23,6 +23,8 @@
 		862054671DA5270C00B597ED /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 862054661DA5270C00B597ED /* ExtensionDelegate.m */; };
 		8620546A1DA5270C00B597ED /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862054691DA5270C00B597ED /* NotificationController.m */; };
 		8620546C1DA5270C00B597ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8620546B1DA5270C00B597ED /* Assets.xcassets */; };
+		8627A5F11DAF68FD00073577 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627A5F01DAF68FD00073577 /* TableViewController.m */; };
+		8627A5F41DAF692900073577 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627A5F31DAF692900073577 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,10 @@
 		862054691DA5270C00B597ED /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		8620546B1DA5270C00B597ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8620546D1DA5270C00B597ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8627A5EF1DAF68FD00073577 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		8627A5F01DAF68FD00073577 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		8627A5F21DAF692900073577 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		8627A5F31DAF692900073577 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,10 @@
 				862054281DA5270C00B597ED /* ViewController.h */,
 				862054291DA5270C00B597ED /* ViewController.m */,
 				8620542B1DA5270C00B597ED /* Main.storyboard */,
+				8627A5F21DAF692900073577 /* DetailViewController.h */,
+				8627A5F31DAF692900073577 /* DetailViewController.m */,
+				8627A5EF1DAF68FD00073577 /* TableViewController.h */,
+				8627A5F01DAF68FD00073577 /* TableViewController.m */,
 				8620542E1DA5270C00B597ED /* Assets.xcassets */,
 				862054301DA5270C00B597ED /* LaunchScreen.storyboard */,
 				862054331DA5270C00B597ED /* Info.plist */,
@@ -447,9 +457,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8627A5F41DAF692900073577 /* DetailViewController.m in Sources */,
 				8620542A1DA5270C00B597ED /* ViewController.m in Sources */,
 				862054271DA5270C00B597ED /* AppDelegate.m in Sources */,
 				862054241DA5270C00B597ED /* main.m in Sources */,
+				8627A5F11DAF68FD00073577 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +789,7 @@
 				862054721DA5270C00B597ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		862054741DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinner WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -785,6 +798,7 @@
 				862054761DA5270C00B597ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		862054781DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinner" */ = {
 			isa = XCConfigurationList;
@@ -793,6 +807,7 @@
 				8620547A1DA5270C00B597ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8620547B1DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinnerTests" */ = {
 			isa = XCConfigurationList;
@@ -801,6 +816,7 @@
 				8620547D1DA5270C00B597ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8620547E1DA5270C00B597ED /* Build configuration list for PBXNativeTarget "ProjectSpinnerUITests" */ = {
 			isa = XCConfigurationList;
@@ -809,6 +825,7 @@
 				862054801DA5270C00B597ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
