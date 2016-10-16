@@ -13,7 +13,7 @@
 @end
 
 @implementation SpinnerScene
-
+// add me to git
 - (SKShapeNode *)addChoices
 {
     SKShapeNode *ball = [[SKShapeNode alloc] init];
