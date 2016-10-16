@@ -22,6 +22,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     // add Sprite Stuff
+    // add me to git
     SKView *spriteView = (SKView *) self.view;
     spriteView.showsDrawCount = YES;
     spriteView.showsNodeCount = YES;
