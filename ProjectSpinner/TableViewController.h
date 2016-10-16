@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewController : UITableViewController
+@interface TableViewController : UITableViewController;
 
-@property (nonatomic, strong) NSMutableArray *options;
+@property (strong, nonatomic) NSMutableArray *options;
 
 @end

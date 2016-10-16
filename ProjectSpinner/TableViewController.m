@@ -7,6 +7,7 @@
 //
 
 #import "TableViewController.h"
+#import "DetailViewController.h"
 
 @interface TableViewController ()
 
@@ -16,9 +17,9 @@
 
 @synthesize options;
 
-- (NSMutableArray *) options {
-    if (!options) {
-        options = [[NSMutableArray alloc]init];
+-(NSMutableArray *)options {
+    if (!options){
+        options = [[NSMutableArray alloc] init];
     }
     return options;
 }
@@ -31,11 +32,13 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    [options addObject:@"Project One"];
-    [options addObject:@"Project Two"];
-    [options addObject:@"Project Three"];
-    [options addObject:@"Project Four"];
-    [options addObject:@"Project Five"];
+
+    // initiliase options
+    [self.options addObject:@"Project One"];
+    [self.options addObject:@"Project Two"];
+    [self.options addObject:@"Project Three"];
+    [self.options addObject:@"Project Four"];
+    [self.options addObject:@"Project Five"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,18 +53,16 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [options count];
+    return self.options.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Option" forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    cell.textLabel.text = self.options[indexPath.row];
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
