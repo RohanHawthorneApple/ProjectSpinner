@@ -108,4 +108,16 @@
 }
 */
 
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([[segue identifier] isEqualToString:@"showDetails"]) {
+        NSString *mydata = nil;
+        NSIndexPath *indexPath = nil;
+        
+        indexPath = [self.tableView indexPathForSelectedRow];
+        mydata = self.options[indexPath.row];
+        
+        [[ segue destinationViewController]setTextOptionContents:mydata];
+    }
+}
+
 @end

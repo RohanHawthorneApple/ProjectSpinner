@@ -22,12 +22,10 @@
     [lblDialogue setText:@"Tap to spin, long press to change values"];
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 - (IBAction)showDetailsSegue:(id)sender {
     [lblDialogue setText:@"Going to options..."];
